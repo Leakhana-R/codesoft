@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="stylesheet" href="lp.css" />
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function book() {
+        alert(
+          "Your visit is confirmed!!! Confirmation will be sent to your mail"
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div id="homepage">
+      <section class="header">
+        <div class="home-content" id="home-page">
+          <div class="name">
+            <h1>It's New Year!!</h1>
+            <p><span>20% OFF </span>on all your appoinments</p>
+          </div>
+          <div class="angle-down-icon">
+            <a href="#aboutUs"><i class="fas fa-angle-down"></i></a>
+          </div>
+        </div>
+        <div class="button-section">
+          <button class="animate">
+            <a href="#visit">Book Now</a>
+          </button>
+        </div>
+      </section>
+      <section id="aboutUs">
+        <div class="contents">
+          <div class="new-div">
+            Get exciting offers!! "Indulge in Flavorful Moments, Where Every Bite is a Delight!"
+            Savor the moment with our Happy Hour delights, where every dish tells a story of flavor. Unwind and enjoy,
+             as we bring you a Buy One Get One Free experience on select pasta dishes every Wednesday!
+
+
+
+
+
+            <br /><br />
+          </div>
+          <div class="book-link">
+            <a href=""><i class="fas fa-angle-down"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="appointment" id="visit">
+        <h1 class="heading">BOOK YOUR APPOINTMENT NOW!!</h1>
+        <div class="formContainer">
+          <form action="">
+            <h3>Book your first visit</h3>
+            <label>Name :<span>*</span></label>
+            <input class="inputwithLine" type="text" required />
+            <label>Email : <span>*</span> </label>
+            <input class="inputwithLine" type="email" required />
+            <label>Pick a date: <span>*</span></label>
+            <input class="inputwithLine" type="date" required />
+            <label>Service:<span>*</span></label>
+            <input class="inputwithLine" type="text" required />
+            <label>Time: <span>*</span></label>
+            <div class="input">
+              <input type="time" class="time" required />
+              <select
+                class="session"
+                style="
+                  width: 150px;
+                  height: 25px;
+                  border-radius: 5px;
+                  font-size: 15px;
+                "
+              >
+                <option>-session-</option>
+                <option>AM</option>
+                <option>PM</option>
+              </select>
+            </div>
+          </form>
+          <button class="btn" onclick="book()" type="submit">
+            Book a visit
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
